@@ -1,21 +1,24 @@
 package offsetprintingsuppliesgrails
 
-class ItemType {
-	String	name
+class Repacking {
+	String	code
+	BlendingRecipe	blendingRecipe
 	String	description
-	Boolean	isLegacy
+	Date	repackingDate
+	Warehouse	warehouse
+	Boolean	isConfirmed
+	Date	confirmationDate
 	Boolean	isDeleted
 	Date	dateCreated
 	Date	lastUpdated
-	Account	account
 	
 
     static constraints = {
-		name(nullable:true)
+		code(nullable:true)
 		description(nullable:true)
+		confirmationDate(nullable:true)
 		dateCreated(nullable:true)
 		lastUpdated(nullable:true)
-		account(nullable:true)
 		
     }
 }

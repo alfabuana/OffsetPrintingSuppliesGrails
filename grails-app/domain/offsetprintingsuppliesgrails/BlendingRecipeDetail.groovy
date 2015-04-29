@@ -1,21 +1,18 @@
 package offsetprintingsuppliesgrails
 
-class ItemType {
-	String	name
-	String	description
-	Boolean	isLegacy
+class BlendingRecipeDetail {
+	BlendingRecipe	blendingRecipe
+	Item	item
+	Double	quantity
 	Boolean	isDeleted
 	Date	dateCreated
 	Date	lastUpdated
-	Account	account
 	
+	static belongsTo = BlendingRecipe
 
     static constraints = {
-		name(nullable:true)
-		description(nullable:true)
 		dateCreated(nullable:true)
 		lastUpdated(nullable:true)
-		account(nullable:true)
 		
     }
 }

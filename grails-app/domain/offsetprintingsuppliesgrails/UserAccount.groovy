@@ -1,21 +1,22 @@
 package offsetprintingsuppliesgrails
 
-class ItemType {
+class UserAccount {
+	String	username
+	String	password
 	String	name
 	String	description
-	Boolean	isLegacy
+	Boolean	isAdmin
 	Boolean	isDeleted
-	Date	dateCreated
 	Date	lastUpdated
-	Account	account
+	Date	dateCreated
 	
 
     static constraints = {
+		username(nullable:true)
+		password(nullable:true)
 		name(nullable:true)
 		description(nullable:true)
-		dateCreated(nullable:true)
 		lastUpdated(nullable:true)
-		account(nullable:true)
-		
+		dateCreated(nullable:true)
     }
 }

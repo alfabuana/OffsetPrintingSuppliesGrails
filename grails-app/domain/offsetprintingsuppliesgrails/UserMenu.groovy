@@ -1,21 +1,18 @@
 package offsetprintingsuppliesgrails
 
-class ItemType {
+class UserMenu {
 	String	name
-	String	description
-	Boolean	isLegacy
+	String	groupName
 	Boolean	isDeleted
 	Date	dateCreated
 	Date	lastUpdated
-	Account	account
 	
 
     static constraints = {
 		name(nullable:true)
-		description(nullable:true)
+		groupName(nullable:true)
 		dateCreated(nullable:true)
-		lastUpdated(nullable:true)
-		account(nullable:true)
+		lastUpdated(nullable:true)s
 		
     }
 }

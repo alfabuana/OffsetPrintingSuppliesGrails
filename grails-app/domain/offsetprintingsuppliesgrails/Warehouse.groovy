@@ -1,21 +1,20 @@
 package offsetprintingsuppliesgrails
 
-class ItemType {
+class Warehouse {
+	String	code
 	String	name
 	String	description
-	Boolean	isLegacy
 	Boolean	isDeleted
 	Date	dateCreated
 	Date	lastUpdated
-	Account	account
 	
 
     static constraints = {
+		code(nullable:true)
 		name(nullable:true)
 		description(nullable:true)
 		dateCreated(nullable:true)
 		lastUpdated(nullable:true)
-		account(nullable:true)
 		
     }
 }

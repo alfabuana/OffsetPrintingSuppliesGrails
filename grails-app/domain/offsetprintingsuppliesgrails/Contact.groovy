@@ -15,7 +15,7 @@ class Contact {
 	Boolean	isDeleted
 	Date	dateCreated
 	Date	lastUpdated
-	String	contactType
+	String	contactType // 'Customer', 'Supplier'
 	Integer	defaultPaymentTerm
 	String	namaFakturPajak
 	ContactGroup	contactGroup
