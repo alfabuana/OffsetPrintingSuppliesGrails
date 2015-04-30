@@ -33,6 +33,7 @@ class EmployeeService {
 		valObject.contactNo = object.contactNo
 		valObject.email = object.email
 		valObject.description = object.description
+		valObject = employeeValidationService.updateObjectValidation(valObject)
 		if (valObject.errors.getErrorCount() == 0)
 		{
 			valObject.save()

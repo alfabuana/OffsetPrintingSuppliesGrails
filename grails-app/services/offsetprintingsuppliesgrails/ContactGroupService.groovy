@@ -29,6 +29,7 @@ class ContactGroupService {
 		def valObject = ContactGroup.read(object.id)
 		valObject.name = object.name
 		valObject.description = object.description
+		valObject = contactGroupValidationService.updateObjectValidation(valObject)
 		if (valObject.errors.getErrorCount() == 0)
 		{
 			valObject.save()

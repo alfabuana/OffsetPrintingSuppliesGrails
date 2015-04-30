@@ -43,7 +43,7 @@ class ContactService {
 		valObject.defaultPaymentTerm = object.defaultPaymentTerm
 		valObject.namaFakturPajak = object.namaFakturPajak
 		valObject.contactGroup = ContactGroup.find{id == object.contactGroupId}
-		valObject = companyValidationService.updateObjectValidation(valObject)
+		valObject = contactValidationService.updateObjectValidation(valObject)
 		if (valObject.errors.getErrorCount() == 0)
 		{
 			valObject.save()
