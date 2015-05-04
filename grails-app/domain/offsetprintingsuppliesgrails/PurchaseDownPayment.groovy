@@ -16,7 +16,6 @@ class PurchaseDownPayment {
 	Boolean	isDeleted
 	Date	dateCreated
 	Date	lastUpdated
-	
 
     static constraints = {
 		receivable(nullable:true)

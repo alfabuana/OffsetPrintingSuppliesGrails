@@ -6,7 +6,7 @@ class ReceiptVoucherDetail {
 	String	code
 	Double	rate
 	Double	amount
-	Double	amoutPaid
+	Double	amountPaid
 	String	description
 	Boolean	isConfirmed
 	Date	confirmationDate

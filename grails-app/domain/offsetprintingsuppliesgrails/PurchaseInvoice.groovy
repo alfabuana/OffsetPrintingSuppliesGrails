@@ -1,6 +1,7 @@
 package offsetprintingsuppliesgrails
 
 class PurchaseInvoice {
+	PurchaseReceival	purchaseReceival
 	String	description
 	String	code
 	String	nomorSurat
